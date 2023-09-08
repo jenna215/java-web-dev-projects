@@ -27,6 +27,15 @@ public class Menu {
     public ArrayList<MenuItem> getItems() {
         return items;
     }
-}
+
+    @Override
+    public String toString() {
+        StringBuilder menu = new StringBuilder();
+        for (MenuItem item : items){
+            menu.append(item.toString());
+        }
+        return "Our Menu\n-----\n" + menu;
+    }
+    }
 
 
